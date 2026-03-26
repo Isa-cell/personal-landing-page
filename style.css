@@ -1,6 +1,9 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #f8fafc;
 }
 
 nav {
@@ -33,4 +36,54 @@ nav a {
 
 section {
   padding: 60px 20px;
+}
+
+.container {
+  width:90%;
+  max-width:1000px;
+  margin: 0 auto;
+}
+.eyebrow {
+  text-transform: uppercase;
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #0f172a;
+  color: white;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.button:hover {
+  background: #1e293b;
+  opacity:0.9;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card,
+.project-card {
+  background: #f4f4f4;
+  padding: 24px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor:pointer;
+  text-decoration:none;
+  color:inherit;
+  display: block;
+}
+
+.card:hover{
+  background: #14b8a6;
+  color: white;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
